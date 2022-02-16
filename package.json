@@ -1,0 +1,35 @@
+{
+  "name": "@osspim/koa-middleware",
+  "version": "3.0.1",
+  "description": "Various generic koa middleware functions used by osspim apis",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha -r chai/register-expect test/*.js",
+    "preversion": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ossgroup.com:osspim/backend/libraries/koa-middleware.git"
+  },
+  "keywords": [
+    "osspim",
+    "koa",
+    "middleware"
+  ],
+  "author": "Michael Smesnik <michael@ossgroupp.com>",
+  "license": "ISC",
+  "standard": {
+    "globals": [
+      "expect"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "husky": "^1.3.1",
+    "mocha": "^6.1.3",
+    "prettier-standard": "^9.1.1",
+    "sinon": "^7.3.1",
+    "standard": "^12.0.1"
+  }
+}
